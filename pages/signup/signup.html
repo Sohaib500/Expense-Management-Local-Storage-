@@ -37,7 +37,8 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text"><i class="fas fa-envelope signup_icons"></i></span>
                                 </div>
-                                <input type="text" id="r_email" class="form-control" placeholder="Email">
+                                <input type="email" id="r_email" class="form-control" placeholder="Email" required 
+                                pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
                             </div><br>
 
                             <label class="card_label">User Password: </label>
@@ -50,9 +51,9 @@
                         </div>
                         <div class="card-footer text-muted">
                             <div style="text-align: center;">
-                                <button type="button" class="btn btn-danger signin_btn w3-card-4" onclick="sign_up()" data-dismiss="modal">Register</button>
+                                <button type="submit" class="btn btn-danger signin_btn w3-card-4" onclick="sign_up()" data-dismiss="modal">Register</button>
                                 &nbsp;
-                                <a href="../../index.html"><button type="button" class="btn btn-danger register_btn">Signin</button></a>
+                                <a href="../../index.html"><button type="button" class="btn btn-danger register_btn">Sign in</button></a>
                             </div>  
                         </div><br>
                       </div>

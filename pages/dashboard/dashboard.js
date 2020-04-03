@@ -230,7 +230,7 @@ function show_todo()
             action_td.appendChild(update_btn);
 
             var delete_btn = document.createElement('button');
-                delete_btn.setAttribute('class', 'btn btn-danger btn-sm');
+                delete_btn.setAttribute('class', 'btn btn-danger btn-sm btn_margin');
                 delete_btn.setAttribute('id', i)
                 delete_btn.innerHTML = 'Delete';
                 delete_btn.setAttribute('onclick', 'remove(this)');
