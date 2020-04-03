@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/W3_css/w3.css">
+    <link rel="stylesheet" href="../../assets/sweet_alert/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../assets/animate_css/animate.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../../assets/fontawesome/css/all.css">
+    <script src="../../assets/sweet_alert/sweetalert2.all.js"></script>
+    <script src="../../assets/fontawesome/js/all.js"></script>
+</head>
+<body class="body_bg">
+
+    <div>
+        <div class="container w3-display-middle">
+            <div class="row justify-content-center" >
+                <div class="col-md-7">
+                    <div class="card w3-card-4 register_card_shadow animated bounceInRight card_div container" style="border-radius: 20px;">
+                        <div class="card-header w3-center">
+                          <h1 class="signup_heading">Sign up</h1>
+                        </div>
+                        <div class="card-body">
+                            <label class="card_label">Username: </label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="fas fa-user signup_icons"></i></span>
+                                </div>
+                                <input type="text" id="r_username" class="form-control" placeholder="Username">
+                            </div><br>
+                            
+                            <label class="card_label">User Email: </label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="fas fa-envelope signup_icons"></i></span>
+                                </div>
+                                <input type="text" id="r_email" class="form-control" placeholder="Email">
+                            </div><br>
+
+                            <label class="card_label">User Password: </label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="fas fa-lock signup_icons"></i></span>
+                                </div>
+                                <input type="password" id="r_pwd" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <div style="text-align: center;">
+                                <button type="button" class="btn btn-danger signin_btn w3-card-4" onclick="sign_up()" data-dismiss="modal">Register</button>
+                                &nbsp;
+                                <a href="../../index.html"><button type="button" class="btn btn-danger register_btn">Signin</button></a>
+                            </div>  
+                        </div><br>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/bootstrap/js/jquery.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+.body_bg
+{
+    /* background-image: linear-gradient(90deg, #0f0c29, #302b63, #24243e); */
+    background-image: linear-gradient(90deg, #3b3575, #58529b, #474768);
+    height: 100vh;
+    width: 100%;
+}
+
+.card_div
+{
+    background-image: url('../../assets/images/ice-mountain-86.png') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border: 0 !important;
+
+}
+
+.card_input
+{
+    background-color: rgba(255, 255, 255, 0.6);
+    
+
+}
+
+.signup_icons
+{
+    font-size: 20px;
+    color: rgb(29, 30, 116);
+}
+
+.card_label
+{
+    color: white;
+    font-size: 15px;
+}
+
+.signup_heading
+{
+    color: rgb(202, 193, 252);
+    
+}
+
+.register_card_shadow
+{
+   
+    border: solid 5px rgb(29, 30, 116);
+    /* background-color: #eed; */
+    box-shadow:  0 0 50px  rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 50px rgba(0, 0, 0, 0.6)
+  }
+
+.signin_btn
+{
+    background-image: linear-gradient(50deg, #c94b4b, #b66293) !important;
+    border: 0 !important;
+    border-radius: 5px;
+    
+}
+
+button.signin_btn:hover
+{
+    background-image: linear-gradient(50deg, #ee6161, #cf61a1) !important;
+    border: 0 !important;
+}
+
+.register_btn
+{
+    background-image: linear-gradient(50deg, #c94b4b, #b66293) !important; 
+    border: 0 !important;
+    border-radius: 5px;
+    
+}
+
+button.register_btn:hover
+{
+    background-image: linear-gradient(50deg, #ee6161, #cf61a1) !important;
+    border: 0 !important;
+    
+}
+

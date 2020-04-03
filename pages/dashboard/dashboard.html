@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense App</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/W3_css/w3.css">
+    <link rel="stylesheet" href="../../assets/sweet_alert/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../assets/animate_css/animate.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../../assets/fontawesome/css/all.css">
+    <script src="../../assets/sweet_alert/sweetalert2.all.js"></script>
+    <script src="../../assets/fontawesome/js/all.js"></script>
+</head>
+<body class="body_bg" onload="show_todo()">
+    
+        <nav class="navbar navbar-expand-md  navbar-dark navbar_bg w3-card-4">
+            <div class="container" style="min-height: 10px;">
+                <span class="logo_txt"><i class="far fa-list-alt nav_logo"></i>&nbsp; <h3 class="nav_logo_text">Expense Managrment App</h3></span>
+                <span>
+                    <div class="dropdown" style="background-color: transparent;">
+                        <button type="button" id="usr" style="text-transform: capitalize;" class="w3-card-4 btn btn-link dropdown-toggle user_name" data-toggle="dropdown">
+                            <i class="fas fa-user" style="margin-right: 8px;"></i>John
+                          </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../../index.html"><i class="fas fa-sign-out-alt"
+                                style="margin-right: 8px;"></i>Logout</a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    
+        <div class="container">
+            <div class="row div_margin_set">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 class="expense_heading">Create Expense List</h1>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-5 input_margin">
+                            <input type="text" id="exp_name" class="form-control w3" placeholder="Expense name">
+                        </div>
+                        <div class="col-md-4 input_margin">
+                            <input type="number" id="exp_amount" class="form-control w3-card-4" placeholder="Expense Amount">
+                        </div>
+                        <div class="col-md-3 input_margin">
+                            <button id="add_btn" onclick="add_todo()" class="btn btn-primary w3-card-4" style="width: 100%;"><i class="fas fa-plus"></i>&nbsp; Add Item</button>
+                            <button id="upd_btn" onclick="update_item()" class="btn btn-primary" style="display: none;">Update</button>
+                            <button id="del_btn" onclick="reset()" class="btn btn-light" style="display: none;">Back</button>
+                        </div>
+                    </div> <br><br>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="container w3-card-4" style="border-radius: 10px; background-color: white; border: 1px;">
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top: 10px;">
+                                    
+                                    <input type="text" style="background-color: rgb(219, 220, 223);" id="filter_record" onkeyup="sort()" class="form-control" placeholder="Filter expense by name">
+                                </div>
+                            </div>
+                            <table id="table_record" class="w3-table  w3-striped w3-bordered animated fadeInDown">
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No</th>
+                                        <th>Expense Name</th>
+                                        <th>Amount</th>
+                                        <th>Created At</th>
+                                        <th>Action</th>
+                                      </tr>
+                                </thead>
+                               <tbody id="main">
+                                     <!-- <tr>
+                                        <td>Jill</td>
+                                        <td>Smith</td>
+                                        <td>50</td>
+                                        <td>50</td>
+                                        <td>
+                                            <button class="btn btn-dark btn-sm">Update</button>
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </td>
+                                    </tr> -->
+                               </tbody>
+                               <tfoot>
+                                    <tr>
+                                        <td id="total" colspan="5" style="text-align: center; font-weight: bold;">Total Amount: 0</td>
+                                    </tr>
+                               </tfoot>
+                              </table>
+                        </div>    
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    <script src="../../assets/bootstrap/js/jquery.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
